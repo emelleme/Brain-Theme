@@ -1,0 +1,355 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>It's Brain - premium admin HTML template by Eugene Kopyov</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.4.4.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/spinner/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/spinner/ui.spinner.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="js/fileManager/elfinder.min.js"></script>
+
+<script type="text/javascript" src="js/wysiwyg/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.image.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.link.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.table.js"></script>
+
+<script type="text/javascript" src="js/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="js/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/flot/excanvas.min.js"></script>
+
+<script type="text/javascript" src="js/dataTables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/dataTables/colResizable.min.js"></script>
+
+<script type="text/javascript" src="js/forms/forms.js"></script>
+<script type="text/javascript" src="js/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/forms/autotab.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="js/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/forms/jquery.filestyle.js"></script>
+
+<script type="text/javascript" src="js/colorPicker/colorpicker.js"></script>
+
+<script type="text/javascript" src="js/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/ui/progress.js"></script>
+<script type="text/javascript" src="js/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/ui/jquery.alerts.js"></script>
+
+<script type="text/javascript" src="js/jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/cal.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/jquery.ToTop.js"></script>
+<script type="text/javascript" src="js/jquery.listnav.js"></script>
+<script type="text/javascript" src="js/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="js/jquery.timeentry.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<div id="topNav">
+    <div class="fixed">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Eugene!</span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" /><span>Profile</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" /><span>Tasks</span></a></li>
+                    <li class="dd"><img src="images/icons/topnav/messages.png" alt="" /><span>Messages</span><span class="numberTop">8</span>
+                        <ul class="menu_body">
+                            <li><a href="#" title="">new message</a></li>
+                            <li><a href="#" title="">inbox</a></li>
+                            <li><a href="#" title="">outbox</a></li>
+                            <li><a href="#" title="">trash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+                    <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<div id="header" class="wrapper">
+    <div class="logo"><a href="/" title=""><img src="images/loginLogo.png" alt="" /></a></div>
+    <div class="middleNav">
+    	<ul>
+        	<li class="iMes"><a href="#" title=""><span>Support tickets</span></a><span class="numberMiddle">9</span></li>
+            <li class="iStat"><a href="#" title=""><span>Statistics</span></a></li>
+            <li class="iUser"><a href="#" title=""><span>User list</span></a></li>
+            <li class="iOrders"><a href="#" title=""><span>Billing panel</span></a></li>
+        </ul>
+    </div>
+    <div class="fix"></div>
+</div>
+
+<!-- Main wrapper -->
+<div class="wrapper">
+	
+	<!-- Left navigation -->
+    <div class="leftNav">
+    	<ul id="menu">
+        	<li class="dash"><a href="index.html" title=""><span>Dashboard</span></a></li>
+            <li class="graphs"><a href="charts.html" title=""><span>Graphs and charts</span></a></li>
+            <li class="forms"><a href="form_elements.html" title=""><span>Form elements</span></a></li>
+            <li class="login"><a href="ui_elements.html" title=""><span>Interface elements</span></a></li>
+            <li class="typo"><a href="typo.html" title="" class="active"><span>Typography</span></a></li>
+            <li class="tables"><a href="tables.html" title=""><span>Tables</span></a></li>
+            <li class="cal"><a href="calendar.html" title=""><span>Calendar</span></a></li>
+            <li class="gallery"><a href="gallery.html" title=""><span>Gallery</span></a></li>
+            <li class="widgets"><a href="widgets.html" title=""><span>Widgets</span></a></li>
+            <li class="files"><a href="file_manager.html" title=""><span>File manager</span></a></li>
+            <li class="errors"><a href="#" title="" class="exp"><span>Error pages</span><span class="numberLeft">6</span></a>
+            	<ul class="sub">
+                    <li><a href="403.html" title="">403 page</a></li>
+                    <li><a href="404.html" title="">404 page</a></li>
+                    <li><a href="405.html" title="">405 page</a></li>
+                    <li><a href="500.html" title="">500 page</a></li>
+                    <li><a href="503.html" title="">503 page</a></li>
+                    <li class="last"><a href="offline.html" title="">Website is offline</a></li>
+                </ul>
+            </li>
+            <li class="pic"><a href="icons.html" title=""><span>Buttons and icons</span></a></li>
+            <li class="contacts"><a href="contacts.html" title=""><span>Organized contact list</span></a></li>
+        </ul>
+    </div>
+
+	<!-- Content -->
+    <div class="content">
+    	<div class="title"><h5>Typography</h5></div>
+        
+        <!-- Statistics -->
+        <div class="stats">
+        	<ul>
+            	<li><a href="#" class="count grey" title="">52</a><span>new pending tasks</span></li>
+                
+                <li><a href="#" class="count grey" title="">520</a><span>pending orders</span></li>
+                <li><a href="#" class="count grey" title="">14</a><span>new opened tickets</span></li>
+                <li class="last"><a href="#" class="count grey" title="">48</a><span>new user registrations</span></li>
+            </ul>
+            <div class="fix"></div>
+        </div>
+        
+        <!-- Headings -->        
+        <div class="widget first">
+            <div class="head"><h5 class="iCreate">Headings</h5></div>
+            <div class="body">
+                <h1 class="pt10">H1 Tag Header</h1><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+                <h2 class="pt20">H2 Tag Header</h2><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+                <h3 class="pt20">H3 Tag Header</h3><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+                <h4 class="pt20">H4 Tag Header</h4><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+                <h5 class="pt20">H5 Tag Header</h5><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+                <h6 class="pt20">H6 Tag Header</h6><p>Integer dui felis, varius quis vulputate egestas, suscipit ac nisi. Vestibulum sed odio lectus, a dictum enim. Cras justo quam, congue eget tempus id, auctor eget tortorr. Aenean tellus turpis, pharetra ac egestas eu, pretium non nisl</p>
+            </div>
+        </div>
+        
+        <!-- Code viewer -->
+        <div class="widget">
+            <div class="head"><h5 class="iComputer">Code view</h5></div>
+                <pre class="showCodeJS">
+$('#myList').listnav({ 
+    initLetter: 'a', 
+    includeAll: true, 
+    includeOther: true, 
+    flagDisabled: true, 
+    noMatchText: 'Nothing matched your filter, please click another letter.', 
+    prefixes: ['the','a']
+});</pre>
+        </div>
+        
+        <!-- Code viewer -->
+        <div class="widget">
+            <div class="head"><h5 class="iComputer">Main backgrounds</h5></div>
+            <div class="body aligncenter">
+            	<img src="images/patbg1.png" alt="" class="mr15" />
+                <img src="images/patbg2.png" alt="" class="mr15" />
+                <img src="images/patbg3.png" alt="" class="mr15" />
+                <img src="images/patbg4.png" alt="" class="mr15" />
+                <img src="images/patbg5.png" alt="" />
+            </div>
+        </div>
+        
+        <!-- Widgets -->
+        <div class="widgets">
+            <div class="left">
+            
+            	<!-- List styles: plus -->
+                <div class="widget">
+                    <div class="head"><h5 class="iImageList">List styles: plus</h5></div>
+                    <div class="body">
+                        <div class="list plusBlue">
+                            <span class="legend">Blue plus</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list plusRed pt12">
+                            <span class="legend">Red plus</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list plusGrey pt12">
+                            <span class="legend">Grey plus</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+
+                        <div class="list plusGreen pt12">
+                            <span class="legend">Green plus</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- List styles: tip -->
+                <div class="widget">
+                    <div class="head"><h5 class="iImageList">List styles: tip</h5></div>
+                    <div class="body">
+                        <div class="list tipBlue">
+                            <span class="legend">Blue tip</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list tipRed pt12">
+                            <span class="legend">Red tip</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list tipGrey pt12">
+                            <span class="legend">Grey tip</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+
+                        <div class="list tipGreen pt12">
+                            <span class="legend">Green tip</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fix"></div>                 
+            </div>
+            
+            <!-- Right content -->
+            <div class="right">
+            
+            	<!-- List styles: arrow -->
+                <div class="widget">
+                    <div class="head"><h5 class="iImageList">List styles: arrow</h5></div>
+                    <div class="body">
+                        <div class="list arrowBlue">
+                            <span class="legend">Blue arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list arrowRed pt12">
+                            <span class="legend">Red arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list arrowGrey pt12">
+                            <span class="legend">Grey arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+
+                        <div class="list arrowGreen pt12">
+                            <span class="legend">Green arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- List styles: arrow -->
+                <div class="widget">
+                    <div class="head"><h5 class="iImageList">List styles: another arrow</h5></div>
+                    <div class="body">
+                        <div class="list arrow2Blue">
+                            <span class="legend">Blue arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list arrow2Red pt12">
+                            <span class="legend">Red arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="list arrow2Grey pt12">
+                            <span class="legend">Grey arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+
+                        <div class="list arrow2Green pt12">
+                            <span class="legend">Green arrow</span>
+                            <ul>
+                                <li>Phasellus sollicitudin lobortis nunc sit amet eleifend</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fix"></div>
+		
+        <!-- Blockquote -->
+        <blockquote>Cras vel felis ac erat adipiscing pellentesque ac venenatis risus. Etiam commodo convallis ultrices. Aliquam enim mi, ultrices nec consequat et, fringilla a nibh. Duis eu laoreet turpis. Quisque malesuada mollis ligula aliquet semper. Aenean a nibh quis mauris dignissim aliquam eu vel lacus</blockquote>
+
+    </div>
+    <div class="fix"></div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+    	<span>&copy; Copyright 2011. All rights reserved. It's Brain admin theme by <a href="#" title="">Eugene Kopyov</a></span>
+    </div>
+</div>
+
+</body>
+</html>

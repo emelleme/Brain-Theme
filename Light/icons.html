@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>It's Brain - premium admin HTML template by Eugene Kopyov</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.4.4.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/spinner/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/spinner/ui.spinner.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="js/fileManager/elfinder.min.js"></script>
+
+<script type="text/javascript" src="js/wysiwyg/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.image.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.link.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.table.js"></script>
+
+<script type="text/javascript" src="js/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="js/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/flot/excanvas.min.js"></script>
+
+<script type="text/javascript" src="js/dataTables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/dataTables/colResizable.min.js"></script>
+
+<script type="text/javascript" src="js/forms/forms.js"></script>
+<script type="text/javascript" src="js/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/forms/autotab.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="js/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/forms/jquery.filestyle.js"></script>
+
+<script type="text/javascript" src="js/colorPicker/colorpicker.js"></script>
+
+<script type="text/javascript" src="js/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/ui/progress.js"></script>
+<script type="text/javascript" src="js/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/ui/jquery.alerts.js"></script>
+
+<script type="text/javascript" src="js/jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/cal.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/jquery.ToTop.js"></script>
+<script type="text/javascript" src="js/jquery.listnav.js"></script>
+<script type="text/javascript" src="js/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="js/jquery.timeentry.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<div id="topNav">
+    <div class="fixed">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Eugene!</span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" /><span>Profile</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" /><span>Tasks</span></a></li>
+                    <li class="dd"><img src="images/icons/topnav/messages.png" alt="" /><span>Messages</span><span class="numberTop">8</span>
+                        <ul class="menu_body">
+                            <li><a href="#" title="">new message</a></li>
+                            <li><a href="#" title="">inbox</a></li>
+                            <li><a href="#" title="">outbox</a></li>
+                            <li><a href="#" title="">trash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+                    <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<div id="header" class="wrapper">
+    <div class="logo"><a href="/" title=""><img src="images/loginLogo.png" alt="" /></a></div>
+    <div class="middleNav">
+    	<ul>
+        	<li class="iMes"><a href="#" title=""><span>Support tickets</span></a><span class="numberMiddle">9</span></li>
+            <li class="iStat"><a href="#" title=""><span>Statistics</span></a></li>
+            <li class="iUser"><a href="#" title=""><span>User list</span></a></li>
+            <li class="iOrders"><a href="#" title=""><span>Billing panel</span></a></li>
+        </ul>
+    </div>
+    <div class="fix"></div>
+</div>
+
+<!-- Main wrapper -->
+<div class="wrapper">
+	
+	<!-- Left navigation -->
+    <div class="leftNav">
+    	<ul id="menu">
+        	<li class="dash"><a href="index.html" title=""><span>Dashboard</span></a></li>
+            <li class="graphs"><a href="charts.html" title=""><span>Graphs and charts</span></a></li>
+            <li class="forms"><a href="form_elements.html" title=""><span>Form elements</span></a></li>
+            <li class="login"><a href="ui_elements.html" title=""><span>Interface elements</span></a></li>
+            <li class="typo"><a href="typo.html" title=""><span>Typography</span></a></li>
+            <li class="tables"><a href="tables.html" title=""><span>Tables</span></a></li>
+            <li class="cal"><a href="calendar.html" title=""><span>Calendar</span></a></li>
+            <li class="gallery"><a href="gallery.html" title=""><span>Gallery</span></a></li>
+            <li class="widgets"><a href="widgets.html" title=""><span>Widgets</span></a></li>
+            <li class="files"><a href="file_manager.html" title=""><span>File manager</span></a></li>
+            <li class="errors"><a href="#" title="" class="exp"><span>Error pages</span><span class="numberLeft">6</span></a>
+            	<ul class="sub">
+                    <li><a href="403.html" title="">403 page</a></li>
+                    <li><a href="404.html" title="">404 page</a></li>
+                    <li><a href="405.html" title="">405 page</a></li>
+                    <li><a href="500.html" title="">500 page</a></li>
+                    <li><a href="503.html" title="">503 page</a></li>
+                    <li class="last"><a href="offline.html" title="">Website is offline</a></li>
+                </ul>
+            </li>
+            <li class="pic"><a href="icons.html" title="" class="active"><span>Buttons and icons</span></a></li>
+            <li class="contacts"><a href="contacts.html" title=""><span>Organized contact list</span></a></li>
+        </ul>
+    </div>
+
+	<!-- Content -->
+    <div class="content">
+    	<div class="title"><h5>Icons and buttons</h5></div>
+        
+        <!-- Statistics -->
+        <div class="stats">
+        	<ul>
+            	<li><a href="#" class="count grey" title="">52</a><span>new pending tasks</span></li>
+                
+                <li><a href="#" class="count grey" title="">520</a><span>pending orders</span></li>
+                <li><a href="#" class="count grey" title="">14</a><span>new opened tickets</span></li>
+                <li class="last"><a href="#" class="count grey" title="">48</a><span>new user registrations</span></li>
+            </ul>
+            <div class="fix"></div>
+        </div>
+        
+        <!-- Small buttons with icons -->        
+        <div class="widget first">
+            <div class="head"><h5 class="iImage2">Small buttons with icons (300 icons in total)</h5></div>
+            <div class="body aligncenter">
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/adminUser.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/alarm.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/cog3.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/chart8.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/money.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/mail.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/paypal.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/pencil.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/phone3.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/microphone.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/megaphone.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/pin.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/printer.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/twitter.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/skype.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/dark/sound.png" alt="" /></a>
+                <a href="#" title="" class="btn14"><img src="images/icons/dark/graph.png" alt="" /></a>
+                
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/gmaps.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/image2.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/laptop.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/priceTag.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/wordpress.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/user.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/link.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/chemical.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/like.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/files.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/locked2.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/rss.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/map.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/outgoing.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/presentation.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5 mt12"><img src="images/icons/dark/power.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mt12"><img src="images/icons/dark/refresh.png" alt="" /></a>
+            </div>
+        </div>
+        
+        <!-- Large buttons with icons and text -->
+        <div class="widget">
+            <div class="head"><h5 class="iImage2">Large buttons with icons</h5></div>
+            <div class="body aligncenter">
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/pencil.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/phone3.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/incoming.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/pin.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/graph.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55 mr10"><img src="images/icons/middlenav/fullscreen.png" alt="" /><span>Hello world</span></a>
+                <a href="#" title="" class="btn55"><img src="images/icons/middlenav/wordpress.png" alt="" /><span>Hello world</span></a>
+            </div>
+        </div>
+        
+        <!-- Just icons -->
+        <div class="widget">
+            <div class="head"><h5 class="iImage2">Simple icons examples. Theme contains 300 icons in total</h5></div>
+            <div class="body aligncenter">
+                <img src="images/icons/dark/adminUser.png" alt="" class="mr10 mt5" />
+                <img src="images/icons/dark/alarm.png" alt="" class="mr10" />
+                <img src="images/icons/dark/cog3.png" alt="" class="mr10" />
+                <img src="images/icons/dark/chart8.png" alt="" class="mr10" />
+                <img src="images/icons/dark/money.png" alt="" class="mr10" />
+                <img src="images/icons/dark/mail.png" alt="" class="mr10" />
+                <img src="images/icons/dark/paypal.png" alt="" class="mr10" />
+                <img src="images/icons/dark/pencil.png" alt="" class="mr10" />
+                <img src="images/icons/dark/phone3.png" alt="" class="mr10" />
+                <img src="images/icons/dark/microphone.png" alt="" class="mr10" />
+                <img src="images/icons/dark/megaphone.png" alt="" class="mr10" />
+                <img src="images/icons/dark/pin.png" alt="" class="mr10" />
+                <img src="images/icons/dark/printer.png" alt="" class="mr10" />
+                <img src="images/icons/dark/twitter.png" alt="" class="mr10" />
+                <img src="images/icons/dark/skype.png" alt="" class="mr10" />
+                <img src="images/icons/dark/sound.png" alt="" class="mr10" />
+                <img src="images/icons/dark/graph.png" alt="" class="mr10" />
+                
+                <img src="images/icons/dark/gmaps.png" alt="" class="mr10" />
+                <img src="images/icons/dark/image2.png" alt="" class="mr10" />
+                <img src="images/icons/dark/laptop.png" alt="" class="mr10" />
+                <img src="images/icons/dark/priceTag.png" alt="" class="mr10" />
+                <img src="images/icons/dark/wordpress.png" alt="" class="mr10" />
+                <img src="images/icons/dark/user.png" alt="" class="mr10" />
+                <img src="images/icons/dark/link.png" alt="" class="mr10" />
+                <img src="images/icons/dark/chemical.png" alt="" />
+            </div>
+        </div>
+        
+        <!-- Small buttons with color icons -->        
+        <div class="widget first">
+            <div class="head"><h5 class="iImage2">Small buttons with color icons (135 color icons in total)</h5></div>
+            <div class="body aligncenter">
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/application-split-tile.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/address-book-open.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/application.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/application-plus.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/money.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/mail.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/bank.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/pencil.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/sitemap.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/ui-color-picker-transparent.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/trophy.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/pin.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/report-paper.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/present.png" alt="" /></a>
+                <a href="#" title="" class="btn14 mr5"><img src="images/icons/color/paint-can.png" alt="" /></a>
+                <a href="#" title="" class="btn14"><img src="images/icons/color/layout-6.png" alt="" /></a>
+            </div>
+        </div>
+        
+        <!-- Color icons -->
+        <div class="widget">
+            <div class="head"><h5 class="iImage2">Color icons examples. Theme contains 135 color icons</h5></div>
+            <div class="body aligncenter">
+                <img src="images/icons/color/address-book.png" alt="" class="mr10 mt5" />
+                <img src="images/icons/color/address-book-open.png" alt="" class="mr10" />
+                <img src="images/icons/color/android.png" alt="" class="mr10" />
+                <img src="images/icons/color/application.png" alt="" class="mr10" />
+                <img src="images/icons/color/application-plus.png" alt="" class="mr10" />
+                <img src="images/icons/color/application-split-tile.png" alt="" class="mr10" />
+                <img src="images/icons/color/arrow-circle.png" alt="" class="mr10" />
+                <img src="images/icons/color/arrow-circle-double.png" alt="" class="mr10" />
+                <img src="images/icons/color/arrow-in-out.png" alt="" class="mr10" />
+                <img src="images/icons/color/baggage-cart-box.png" alt="" class="mr10" />
+                <img src="images/icons/color/bank.png" alt="" class="mr10" />
+                <img src="images/icons/color/ui-slider.png" alt="" class="mr10" />
+                <img src="images/icons/color/blog.png" alt="" class="mr10" />
+                <img src="images/icons/color/blue-document-access.png" alt="" class="mr10" />
+                <img src="images/icons/color/blue-document-excel.png" alt="" class="mr10" />
+                <img src="images/icons/color/blue-document-flash-movie.png" alt="" class="mr10" />
+                <img src="images/icons/color/blue-document-illustrator.png" alt="" class="mr10" />
+                
+                <img src="images/icons/color/blue-document-pdf-text.png" alt="" class="mr10" />
+                <img src="images/icons/color/chart.png" alt="" class="mr10" />
+                <img src="images/icons/color/cross.png" alt="" class="mr10" />
+                <img src="images/icons/color/database.png" alt="" class="mr10" />
+                <img src="images/icons/color/flask.png" alt="" class="mr10" />
+                <img src="images/icons/color/feed.png" alt="" class="mr10" />
+                <img src="images/icons/color/layers-ungroup.png" alt="" />
+            </div>
+        </div>
+        
+        <!-- Inline buttons with icons -->
+        <div class="widget">
+            <div class="head"><h5 class="iImage2">Inline buttons with icons examples</h5></div>
+            <div class="body aligncenter">
+            	<a href="#" title="" class="btnIconLeft mr10 mt5"><img src="images/icons/dark/adminUser.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/image2.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/priceTag.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/like.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft"><img src="images/icons/dark/map.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10 mt10"><img src="images/icons/dark/presentation.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/power.png" alt="" class="icon" /><span>Hello world</span></a>
+            	<a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/files.png" alt="" class="icon" /><span>Hello world</span></a>
+                <a href="#" title="" class="btnIconLeft mr10"><img src="images/icons/dark/laptop.png" alt="" class="icon" /><span>Hello world</span></a>
+                <a href="#" title="" class="btnIconLeft"><img src="images/icons/dark/sound.png" alt="" class="icon" /><span>Hello world</span></a>
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="fix"></div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+    	<span>&copy; Copyright 2011. All rights reserved. It's Brain admin theme by <a href="#" title="">Eugene Kopyov</a></span>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>It's Brain - premium admin HTML template by Eugene Kopyov</title>
+
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.4.4.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/spinner/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="js/spinner/ui.spinner.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="js/fileManager/elfinder.min.js"></script>
+
+<script type="text/javascript" src="js/wysiwyg/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.image.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.link.js"></script>
+<script type="text/javascript" src="js/wysiwyg/wysiwyg.table.js"></script>
+
+<script type="text/javascript" src="js/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="js/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="js/flot/excanvas.min.js"></script>
+
+<script type="text/javascript" src="js/dataTables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="js/dataTables/colResizable.min.js"></script>
+
+<script type="text/javascript" src="js/forms/forms.js"></script>
+<script type="text/javascript" src="js/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="js/forms/autotab.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="js/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="js/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="js/forms/jquery.filestyle.js"></script>
+
+<script type="text/javascript" src="js/colorPicker/colorpicker.js"></script>
+
+<script type="text/javascript" src="js/uploader/plupload.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="js/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="js/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="js/ui/progress.js"></script>
+<script type="text/javascript" src="js/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="js/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="js/ui/jquery.alerts.js"></script>
+
+<script type="text/javascript" src="js/jBreadCrumb.1.1.js"></script>
+<script type="text/javascript" src="js/cal.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartWizard.min.js"></script>
+<script type="text/javascript" src="js/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="js/jquery.ToTop.js"></script>
+<script type="text/javascript" src="js/jquery.listnav.js"></script>
+<script type="text/javascript" src="js/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="js/jquery.timeentry.min.js"></script>
+
+<script type="text/javascript" src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<div id="topNav">
+    <div class="fixed">
+        <div class="wrapper">
+            <div class="welcome"><a href="#" title=""><img src="images/userPic.png" alt="" /></a><span>Howdy, Eugene!</span></div>
+            <div class="userNav">
+                <ul>
+                    <li><a href="#" title=""><img src="images/icons/topnav/profile.png" alt="" /><span>Profile</span></a></li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/tasks.png" alt="" /><span>Tasks</span></a></li>
+                    <li class="dd"><img src="images/icons/topnav/messages.png" alt="" /><span>Messages</span><span class="numberTop">8</span>
+                        <ul class="menu_body">
+                            <li><a href="#" title="">new message</a></li>
+                            <li><a href="#" title="">inbox</a></li>
+                            <li><a href="#" title="">outbox</a></li>
+                            <li><a href="#" title="">trash</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title=""><img src="images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+                    <li><a href="login.html" title=""><img src="images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<div id="header" class="wrapper">
+    <div class="logo"><a href="/" title=""><img src="images/loginLogo.png" alt="" /></a></div>
+    <div class="middleNav">
+    	<ul>
+        	<li class="iMes"><a href="#" title=""><span>Support tickets</span></a><span class="numberMiddle">9</span></li>
+            <li class="iStat"><a href="#" title=""><span>Statistics</span></a></li>
+            <li class="iUser"><a href="#" title=""><span>User list</span></a></li>
+            <li class="iOrders"><a href="#" title=""><span>Billing panel</span></a></li>
+        </ul>
+    </div>
+    <div class="fix"></div>
+</div>
+
+<!-- Main wrapper -->
+<div class="wrapper">
+
+	<!-- Left navigation -->
+    <div class="leftNav">
+    	<ul id="menu">
+        	<li class="dash"><a href="index.html" title=""><span>Dashboard</span></a></li>
+            <li class="graphs"><a href="charts.html" title=""><span>Graphs and charts</span></a></li>
+            <li class="forms"><a href="form_elements.html" title="" class="active"><span>Form elements</span></a></li>
+            <li class="login"><a href="ui_elements.html" title=""><span>Interface elements</span></a></li>
+            <li class="typo"><a href="typo.html" title=""><span>Typography</span></a></li>
+            <li class="tables"><a href="tables.html" title=""><span>Tables</span></a></li>
+            <li class="cal"><a href="calendar.html" title=""><span>Calendar</span></a></li>
+            <li class="gallery"><a href="gallery.html" title=""><span>Gallery</span></a></li>
+            <li class="widgets"><a href="widgets.html" title=""><span>Widgets</span></a></li>
+            <li class="files"><a href="file_manager.html" title=""><span>File manager</span></a></li>
+            <li class="errors"><a href="#" title="" class="exp"><span>Error pages</span><span class="numberLeft">6</span></a>
+            	<ul class="sub">
+                    <li><a href="403.html" title="">403 page</a></li>
+                    <li><a href="404.html" title="">404 page</a></li>
+                    <li><a href="405.html" title="">405 page</a></li>
+                    <li><a href="500.html" title="">500 page</a></li>
+                    <li><a href="503.html" title="">503 page</a></li>
+                    <li class="last"><a href="offline.html" title="">Website is offline</a></li>
+                </ul>
+            </li>
+            <li class="pic"><a href="icons.html" title=""><span>Buttons and icons</span></a></li>
+            <li class="contacts"><a href="contacts.html" title=""><span>Organized contact list</span></a></li>
+        </ul>
+    </div>
+
+	<!-- Content -->
+    <div class="content" id="container">
+    	<div class="title"><h5>Form elements</h5></div>
+        
+        <!-- Statistics -->
+        <div class="stats">
+        	<ul>
+            	<li><a href="#" class="count grey" title="">52</a><span>new pending tasks</span></li>
+                
+                <li><a href="#" class="count grey" title="">520</a><span>pending orders</span></li>
+                <li><a href="#" class="count grey" title="">14</a><span>new opened tickets</span></li>
+                <li class="last"><a href="#" class="count grey" title="">48</a><span>new user registrations</span></li>
+            </ul>
+            <div class="fix"></div>
+        </div>
+        
+        <!-- Form begins -->
+        <form action="" class="mainForm">
+        
+        	<!-- Input text fields -->
+            <fieldset>
+                <div class="widget first">
+                    <div class="head"><h5 class="iList">Text fields</h5></div>
+                        <div class="rowElem nobg"><label>Usual input text:</label><div class="formRight"><input type="text" name="inputtext"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Input password:</label><div class="formRight"><input type="password" /></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Input with placeholder:</label><div class="formRight"><input type="text" name="inputtext" placeholder="enter your placeholder text here"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Input with autofocus:</label><div class="formRight"><input type="text" name="inputtext" class="autoF"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Read only field:</label><div class="formRight"><input type="text" readonly="readonly" value="Read only text goes here" name="inputtext"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Input with tooltip:</label><div class="formRight"><input type="text" name="inputtext" class="rightDir" title="Cool, huh?" /></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Disabled input field:</label><div class="formRight"><input type="text" disabled="disabled" value="Disabled field" name="inputtext"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>With predefined value:</label><div class="formRight"><input type="text" value="http://" name="inputtext"/></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>With max length:</label><div class="formRight"><input type="text" maxlength="20" placeholder="max 20 characters here" name="inputtext"/></div><div class="fix"></div></div>
+              
+                        <div class="rowElem"><label>Usual textarea:</label><div class="formRight"><textarea rows="8" cols="" name="textarea"></textarea></div><div class="fix"></div></div>
+                        <div class="rowElem"><label>Autogrowing textarea:</label><div class="formRight"><textarea rows="8" cols="" class="auto" name="textarea"></textarea></div><div class="fix"></div></div>
+                        <input type="submit" value="Submit form" class="basicBtn submitForm mb22" />
+                        <div class="fix"></div>
+
+                </div>
+            </fieldset>
+            
+            <!-- Filtering data rows -->
+            <fieldset>
+                <div class="widget">
+                    <div class="head"><h5 class="iView">Filtering data rows</h5></div>
+                    <div class="rowElem nobg">
+                        <label>Simple data row :</label> 
+                        <div class="formRight moreFields">
+                            <ul class="rowData">
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="test" maxlength="6" /></li>
+                                <li><span>All characters</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Numbers only</label> 
+                        <div class="formRight moreFields onlyNums">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li><span>class="onlyNums"</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+    
+                    <div class="rowElem">
+                        <label>Letters only</label> 
+                        <div class="formRight moreFields onlyText">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li><span>class="onlyText"</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Alpha only</label> 
+                        <div class="formRight moreFields onlyAlpha">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li><span>class="onlyAlpha"</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+    
+                    <div class="rowElem">
+                        <label>Regular expressions</label> 
+                        <div class="formRight moreFields onlyRegex">
+                            <ul>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="question" maxlength="6" /></li>
+                                <li><span>class="onlyRegex"</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Uppercase converting</label> 
+                        <div class="formRight moreFields allUpper">
+                            <ul>
+                                <li><input type="text" name="up1" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up2" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up3" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up4" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up5" maxlength="6" /></li>
+                                <li class="sep">-</li>
+                                <li><input type="text" name="up6" maxlength="6" /></li>
+                                <li><span>class="allUpper"</span></li>
+                            </ul>  
+                        </div> 
+                        <div class="fix"></div>   
+                    </div>
+                </div>   
+            </fieldset>
+            
+            <!-- Dropdowns and selects -->
+            <fieldset>
+                <div class="widget">    
+                    <div class="head"><h5 class="iCoverflow">Drowpdowns and selects</h5></div>
+                
+                    <div class="rowElem nobg">
+                        <label>Select without scroll :</label>
+                        <div class="formRight">                        
+                            <select name="select">
+                                <option value="">1</option>
+                                <option value="opt1">2</option>
+                            </select>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Select with scrolling :</label>
+                        <div class="formRight">
+                        <select name="select2" >
+                            <option value="opt1">Usual select with scrolling</option>
+                            <option value="opt2">Option 2</option>
+                            <option value="opt3">Option 3</option>
+                            <option value="opt4">Option 4</option>
+                            <option value="opt5">Option 5</option>
+                            <option value="opt6">Option 6</option>
+                            <option value="opt7">Option 7</option>
+                            <option value="opt8">Option 8</option>
+                        </select>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Usual multiple select :</label>
+                        <div class="formRight">
+                            
+                            <select multiple="multiple" class="multiple" title="Click to Select a City">
+                            <option selected="selected">Amsterdam</option>      
+                            <option selected="selected">Atlanta</option>
+                            <option>Baltimore</option>
+                            <option>Boston</option>
+                            <option>Buenos Aires</option>
+                            <option>Calgary</option>
+                            <option selected="selected">Chicago</option>
+                            <option>Denver</option>
+                            <option>Dubai</option>
+                            <option>Frankfurt</option>
+                            <option>Hong Kong</option>
+                            <option>Honolulu</option>
+                            <option>Houston</option>
+                            <option>Kuala Lumpur</option>
+                            <option>London</option>
+                            <option>Los Angeles</option>
+                            <option>Melbourne</option>
+                            <option>Mexico City</option>
+                            <option>Miami</option>
+                            <option>Minneapolis</option>
+                            <option>Montreal</option>
+                            <option>New York City</option>
+                            <option>Paris</option>
+                            <option>Philadelphia</option>
+                            <option>Rotterdam</option>
+                            <option>San Diego</option>
+                            <option>San Francisco</option>
+                            <option>Sao Paulo</option>
+                            <option>Seattle</option>
+                            <option>Seoul</option>
+                            <option>Shanghai</option>
+                            <option>Singapore</option>
+                            <option>Sydney</option>
+                            <option>Tokyo</option>
+                            <option>Toronto</option>
+                            <option>Vancouver</option>
+                            </select>
+                            
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem dualBoxes">
+                    	<div class="floatleft">
+                            Filter: <input type="text" id="box1Filter" class="boxFilter" /><button type="button" id="box1Clear" class="dualBtn">x</button><br />
+                            
+                            <select id="box1View" multiple="multiple" class="multiple" style="height:300px;width:300px;">
+                            <option value="501649">2008-2009 "Mini" Baja</option>
+                            <option value="501497" selected="selected">AAPA - Asian American Psychological Association</option>
+                            <option value="501053">Academy of Film Geeks</option>
+                            <option value="500001">Accounting Association</option>
+                            <option value="501227" selected="selected">ACLU</option>
+                            <option value="501610" selected="selected">Active Minds</option>
+                            <option value="501514">Activism with A Reel Edge (A.W.A.R.E.)</option>
+                            <option value="501656">Adopt a Grandparent Program</option>
+                            <option value="501050">Africa Awareness Student Organization</option>
+                            <option value="501075">African Diasporic Cultural RC Interns</option>
+                            <option value="501493">Agape</option>
+                            <option value="501562" selected="selected">AGE-Alliance for Graduate Excellence</option>
+                            <option value="500676">AICHE (American Inst of Chemical Engineers)</option>
+                            <option value="501460">AIDS Sensitivity Awareness Project ASAP</option>
+                            <option value="500004">Aikido Club</option>
+                            <option value="500336">Akanke</option>
+                            </select>
+                            <br/>
+                            <span id="box1Counter" class="countLabel"></span>
+                            
+                            <select id="box1Storage"></select>
+                        </div>
+                            
+                        <div class="floatleft dualControl">
+                            <button id="to2" type="button" class="dualBtn mr5 mb15">&nbsp;&gt;&nbsp;</button>
+                            <button id="allTo2" type="button" class="dualBtn">&nbsp;&gt;&gt;&nbsp;</button><br />
+                            <button id="to1" type="button" class="dualBtn mr5">&nbsp;&lt;&nbsp;</button>
+                            <button id="allTo1" type="button" class="dualBtn">&nbsp;&lt;&lt;&nbsp;</button>
+                        </div>
+                            
+                        <div class="floatright">
+                            Filter: <input type="text" id="box2Filter" class="boxFilter" /><button type="button" id="box2Clear" class="dualBtn">x</button><br />
+                            <select id="box2View" multiple="multiple" class="multiple" style="height:300px;width:300px;"></select><br/>
+                            <span id="box2Counter" class="countLabel"></span>
+                            
+                            <select id="box2Storage"></select>
+                        </div>
+					<div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem"><label>Simple numbers input:</label><div class="formRight"><input type="text" id="s1" value="10" /></div><div class="fix"></div></div>
+                    <div class="rowElem"><label>Decimal:</label><div class="formRight"><input type="text" id="s2" value="10.25" /></div><div class="fix"></div></div>
+                    <div class="rowElem"><label>Currency:</label><div class="formRight"><input type="text" id="s3" /></div><div class="fix"></div></div>
+                    <div class="rowElem"><label>Inline data:</label>
+                        <div class="formRight">
+                            <ul id="s4">
+                                <li>item 1</li>
+                                <li>item 2</li>
+                                <li>item 3</li>
+                                <li>item 4</li>
+                                <li>item 5</li>
+                                <li>item 6</li>
+                                <li>item 7</li>
+                                <li>item 8</li>
+                                <li>item 9</li>
+                                <li>item 10</li>
+                            </ul>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    <div class="rowElem"><label>Inline data (links):</label><div class="formRight"><div id="s5"></div></div><div class="fix"></div></div>
+                </div>
+            </fieldset>
+            
+            <!-- Checkboxes and radios -->
+            <fieldset>
+                <div class="widget">    
+                    <div class="head"><h5 class="iRecord">Checkbox, radio, file input</h5></div>
+                    <div class="rowElem nobg">
+                        <label>Checkbox: </label>
+                        <div class="formRight">
+                            <input type="checkbox" id="check1" name="chbox" checked="checked" /><label>Checkbox checked</label>
+                            <input type="checkbox" id="check2" name="chbox" /><label>Checkbox</label>
+                            <input type="checkbox" id="check3" disabled="disabled" name="chbox" /><label class="itemDisabled">Disabled</label>
+                            <input type="checkbox" id="check4" disabled="disabled" checked="checked" name="chbox" /><label class="itemDisabled">Disabled checked</label>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                                        
+                    <div class="rowElem">
+                        <label>Radio :</label> 
+                        <div class="formRight">
+                            <input type="radio" name="question1" checked="checked" /><label>Selected radio</label>
+                            <input type="radio" name="question1" /><label>Normal state</label>
+                            <input type="radio" name="question" disabled="disabled" /><label class="itemDisabled">Disabled</label>
+                            <input type="radio" name="question" disabled="disabled" checked="checked" /><label class="itemDisabled">Disabled checked</label>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Usual file input :</label> 
+                        <div class="formRight">
+                            <input type="file" class="fileInput" id="fileInput" />
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                </div>
+            </fieldset>
+            
+            <!-- File upload -->
+            <fieldset>
+                <div class="widget">    
+                    <div class="head"><h5 class="iUpload">File upload</h5></div>
+                    <div id="uploader">You browser doesn't have HTML 4 support.</div>                    
+                </div>
+            </fieldset>
+            
+            <!-- WYSIWYG editor -->
+            <fieldset>
+                <div class="widget">    
+                    <div class="head"><h5 class="iPencil">WYSIWYG editor</h5></div>
+                    <textarea class="wysiwyg" rows="5" cols=""></textarea>                
+                </div>
+            </fieldset>
+        </form>
+        
+        <!-- Form with validation -->
+        <form action="" id="valid" class="mainForm">
+            <fieldset>
+                <div class="widget">    
+                    <div class="head"><h5 class="iLocked2">Validation</h5></div>
+                    <div class="rowElem nobg">
+                        <label>Usual required field:</label>
+                        <div class="formRight">
+                            <input type="text" class="validate[required]" name="req" id="req"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Enter password:</label>
+                        <div class="formRight">
+                            <input type="password" class="validate[required,equals[password]]" name="password" id="password1" />
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Repeat password:</label>
+                        <div class="formRight">
+                            <input type="password" class="validate[required,equals[password]]" name="password" id="password2" />
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Minimum field size:</label>
+                        <div class="formRight">
+                            <input type="text" class="validate[required,minSize[6]]" name="minValid" id="minValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Maximum field size:</label>
+                        <div class="formRight">
+                            <input type="text" class="validate[required,maxSize[6]]" value="0123456789" name="maxValid" id="maxValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>integer >= -5:</label>
+                        <div class="formRight">
+                            <input type="text" value="-10" class="validate[required,custom[integer],min[-5]]" name="intValid" id="intValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+          
+                    <div class="rowElem">
+                        <label>Maximum value:</label>
+                        <div class="formRight">
+                            <input type="text" value="55" class="validate[required,custom[integer],max[50]]" name="maxfieldValid" id="maxfieldValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Only letters:</label>
+                        <div class="formRight">
+                            <input type="text" value="this is an invalid char '.'" class="validate[required,custom[onlyLetterSp]]" name="lettersValid" id="lettersValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Only numbers and space:</label>
+                        <div class="formRight">
+                            <input type="text" value="10.1" class="validate[required,custom[onlyNumberSp]]" name="numsValid" id="numsValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Only [0-9a-zA-Z]:</label>
+                        <div class="formRight">
+                            <input type="text" value="too many spaces obviously" class="validate[required,custom[onlyLetterNumber]]" name="regexValid" id="regexValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>IP address:</label>
+                        <div class="formRight">
+                            <input type="text" value="192.168.3." class="validate[required,custom[ipv4]]" name="ipValid" id="ipValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Email address:</label>
+                        <div class="formRight">
+                            <input type="text" value="" class="validate[required,custom[email]]" name="emailValid" id="emailValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Date validation:</label>
+                        <div class="formRight">
+                            <input type="text" value="2009/06/30" class="validate[custom[date],past[2010/01/01]]" name="dateValid" id="dateValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <div class="rowElem">
+                        <label>Date format:</label>
+                        <div class="formRight">
+                            <input type="text" value="2011-01-" class="validate[custom[date],future[NOW]]" name="dateformatValid" id="dateformatValid"/>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+
+                    <div class="rowElem">
+                        <label>Required textarea:</label>
+                        <div class="formRight">
+                            <textarea rows="8" cols="" name="textarea" class="validate[required]" id="textareaValid"></textarea>
+                        </div>
+                        <div class="fix"></div>
+                    </div>
+                    
+                    <input type="submit" value="Submit form" class="basicBtn submitForm mb22" />
+                    <div class="fix"></div>
+                        
+                </div>
+            </fieldset>
+        </form>   
+        
+        <!-- Form -->
+        <form action="" class="mainForm">
+        
+        	<!-- Another version of text inputs -->
+            <fieldset>
+                <div class="widget">
+                    <div class="head"><h5 class="iList">Form. One more version</h5></div>
+                    <div class="rowElem nobg"><label class="topLabel">Usual input text:</label><div class="formBottom"><input type="text" name="inputtext"/></div><div class="fix"></div></div>
+                    <div class="rowElem"><label class="topLabel">Input password:</label><div class="formBottom"><input type="password" /></div><div class="fix"></div></div>
+                    <div class="rowElem"><label class="topLabel">Autogrowing textarea:</label><div class="formBottom"><textarea rows="8" cols="" class="auto" name="textarea"></textarea></div><div class="fix"></div></div>
+                    <input type="submit" value="Submit form" class="basicBtn submitForm mb22" />
+                    <div class="fix"></div>
+                </div>
+            </fieldset>      
+            
+            <!-- And one more version -->
+            <fieldset>
+                <div class="widget">
+                    <div class="head"><h5 class="iList">Form. One more version</h5></div>
+                    <div class="floatleft twoOne">
+                    <div class="rowElem nobg pb0"><label class="topLabel">Usual input text:</label><div class="formBottom"><input type="text" name="inputtext"/></div><div class="fix"></div></div>
+                    <div class="rowElem nobg pb0"><label class="topLabel">Input password:</label><div class="formBottom"><input type="password" /></div><div class="fix"></div></div>
+                    </div>
+                    <div class="floatright twoOne">
+                    <div class="rowElem nobg"><label class="topLabel">Textarea:</label><div class="formBottom"><textarea rows="7" cols="" name="textarea"></textarea></div><div class="fix"></div></div>
+                    <input type="submit" value="Submit form" class="basicBtn submitForm mb22" />
+                    
+                    </div>
+                    <div class="fix"></div>
+                </div>
+            </fieldset> 
+        </form>       
+                
+    </div>
+    
+<div class="fix"></div>
+</div>
+
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+    	<span>&copy; Copyright 2011. All rights reserved. It's Brain admin theme by <a href="#" title="">Eugene Kopyov</a></span>
+    </div>
+</div>
+
+</body>
+</html>
